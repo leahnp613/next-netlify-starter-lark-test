@@ -1,23 +1,38 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import NavbarExample from '@components/NavbarExample'
 
 export default function Home() {
   return (
+      <>
+      <NavbarExample />
     <div className="container">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Lark Ballet</title>
+        <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
+  crossorigin></script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
+  crossorigin></script>
+
+<script>var Alert = ReactBootstrap.Alert;</script>
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main>
-        <Header title="Welcome to my app!" />
+        <Header title="Lark Ballet" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Sign up here
         </p>
       </main>
 
       <Footer />
     </div>
+      </>
   )
 }
